@@ -1,0 +1,269 @@
+#catnavbar nav a{
+    font-size: 13px;
+    padding: 4px 32px 1px 8px
+}
+
+#catnavbar nav{
+    height: 44px;
+    padding: 7px 1px 4px 28px;
+    box-shadow: inset 0 0em 0em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255), 0.2em 0.8em 1em rgb(0 0 0 / 10%)
+}
+
+.development{
+    font-weight: 700;
+    margin-right: 19px;
+    margin-bottom: 5px;
+    border-right: 1.3px solid #d1d7dc;
+}
+
+.section{
+    margin-top: 70px;
+}
+
+.section p{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 40px;
+    letter-spacing: 0px;
+}
+
+#sub_cat_sec{
+    margin-left: 30px;
+}
+
+#heading h5{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 35px;
+    letter-spacing: 0px;
+    /* margin-bottom: 24px; */
+    margin-left: 30px;
+    width: 116%;
+}
+
+#sub_cat_sec #heading h5{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 37px;
+    letter-spacing: 0px;
+    margin-bottom: 28px;
+    margin-left: 1px;
+    width: 116%;
+}
+
+#sub_categories{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 12px;
+}
+
+#sub_categories a{
+    border: 1px solid #b7b6b6cf;
+    width: 308px;
+    padding: 11px 52px 11px 99px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.new{
+    display: flex;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #b7b6b6;
+    padding-bottom: 12px;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 0px;
+}
+
+#course_image img{
+    border: 1px solid rgb(209, 207, 207);
+    margin: 32px 0px 2px 0px;
+}
+
+#course_info{
+    margin-top: 2rem;
+    margin-left: 3.3rem;
+    color: black;
+}
+
+#course_info #title{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#course_info #subtitle{
+    font-size: 14px;
+}
+
+#course_info #instructor{
+    font-size: 14px;
+    color: rgb(143, 142, 142);
+}
+
+#price{
+    margin-top: 2rem;
+    position: absolute;
+    /* margin-left: 12.3rem; */
+    color: black;
+    right: 111px;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.sort{
+    border-bottom: 1.1px solid #b7b6b6cf;
+    padding-bottom: 16px;
+}
+
+#course_details{
+    display: flex;
+}
+
+#starter{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 18.8rem;
+    padding: 33px 12px 12px 162px;
+    background-color: #1c1d1f;
+    color: white;
+}
+
+#details{
+    width: 22rem;
+    background-color: white;
+    height: 40rem;
+    position: absolute;
+    right: 6.5rem;
+    top: 7rem;
+    box-shadow: inset 0 0em 0em rgb(0 0 0 / 10%), 0 0 0 3px rgb(255 255 255), 0.2em 0.8em 1.4em rgb(0 0 0 / 10%)
+}
+
+#course_title {
+    padding: 12px 12px 16px 0px;
+    font-size: 34.6px;
+    font-weight: bold;
+    width: 41rem;
+}
+
+#course_subtitle{
+    font-size: 18px;
+    width: 42rem;
+}
+
+#createdby{
+    padding: 30px 12px 12px 0px;
+}
+
+#learn{
+    border: 1px solid black;
+    margin: 30px 32rem 0px 157px;
+    padding: 23px 11px 7px 20px;
+    border: 1.1px solid #b7b6b6cf;
+}
+
+#learn h1{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#learn ul li{
+    padding-top: 13px;
+    /* list-style-type: lower-roman; */
+    font-size: 14.4px;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 3px 0px 24px;
+}
+
+.price i{
+    top: 3px;
+    font-weight: bold;
+    position: relative;
+}
+
+#addtocart{
+    padding: 11px 72px 8px 72px;;
+    font-size: 16px;
+    font-weight: 700;
+    background: #a435f0;
+    color: white;
+    margin: 20px 14px 12px 25px;
+}
+
+#cart{
+    display: flex;
+}
+
+.buy{
+    border: 1px solid black;
+    text-align: center;
+    margin: 3px 33px 12px 25px;
+    padding: 9px 8px 10px 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#wishlist{
+    border: 1px solid black;
+    margin: 20px 8px 12px 0px;
+    padding: 5px 12px 4px 10px;
+    font-size: 23px;
+    box-sizing: border-box;
+    font-weight: 100;
+}
+
+#req ul{
+    margin: 21px 13px 12px 25px;
+    font-size: 14.7px;
+    font-weight: 700;
+    list-style-type: disc;
+}
+
+#req ul li{
+    font-size: 13px;
+    font-weight: 500;
+    list-style-type: disc;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+#intend ul{
+    margin: 21px 13px 12px 25px;
+    font-size: 14.7px;
+    font-weight: 700;
+    list-style-type: disc;
+}
+
+#intend ul li{
+    font-size: 13px;
+    font-weight: 500;
+    list-style-type: disc;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+#lectures{
+    width: 51%;
+    margin: 0px 12px 0px 153px;
+    color: black;
+}
+#lectures h1{   
+    margin: 21px 13px 22px 0px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+}
+
+#most_popular{
+    display: flex;
+}

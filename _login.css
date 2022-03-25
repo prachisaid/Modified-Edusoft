@@ -1,0 +1,51 @@
+.loginform{
+    /* margin-top: 200px; */
+    position: absolute;
+    top: 165px;
+    left: 440px;
+    align-items: center;
+    width: 330px;
+}
+
+form{
+    display: flex;
+flex-direction: column;
+}
+
+.loginform h3{
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1.4px solid #d1d7dc;
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+    width: 125%;
+} 
+
+form input{
+    padding: 7px 8px 7px 10px;
+    margin: 13px 9px 0px 19px;
+    width: 115%;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+.loginbutton{
+    padding: 7px 8px 7px 10px;
+    margin: 15px 9px 10px 19px;
+    width: 115%;
+    border-radius: 0px;
+    color: white;
+    background-color: #a435f0;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.forgotpass{
+    color: #a435f0;
+    margin: 15px 9px 10px 88px;
+    text-align: center;
+    font-size: 13.5px;
+}

@@ -1,0 +1,473 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    position:absolute;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    box-shadow: inset 0 0em 0em rgb(0 0 0 / 10%), 0 0 0 3px rgb(255 255 255), 0.1em 0.2em 1em rgb(0 0 0 / 30%);
+}
+
+li{
+    list-style-type: none;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 23px;
+    margin: 20px 29px 12px 26px;
+}
+
+.categories{
+    font-size: 13px;
+    margin: 28px 26px 13px 13px;
+}
+
+.search{
+    margin: 18px 26px 13px 26px;
+}
+
+.search input{
+    background-color: rgba(221, 220, 220, 0.151);
+    border: 1.5px solid black;
+    border-radius: 4px;
+    padding: 6px 251px 8px 60px;
+}
+
+.searchLow input{
+    background-color: rgba(221, 220, 220, 0.151);
+    border: 1.5px solid black;
+    width: 260px;
+    height: 44px;
+    margin: 0px 11px 0px 10px;
+
+}
+
+.searchIconLow{
+    font-size: 22px;
+    position: absolute;
+    top: 168px;
+    left: 250px;
+}
+
+.searchIcon{
+    font-size: 22px;
+    position: absolute;
+    top: 29px;
+    left: 330px;
+}
+
+.search ::-webkit-input-placeholder{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.searchLow ::-webkit-input-placeholder{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.teach{
+    font-size: 13px;
+    margin: 28px 10px 13px 9px;
+}
+
+.cart{
+    margin: 20px 26px 13px 8px;
+    font-size: 25px;
+}
+
+.login{
+    margin: 23px 8px 13px 7px;
+}
+
+.loginbtn{
+    border-radius: 0px;
+    border: 1.4px solid black;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 19px 8px 20px;
+}
+
+.signup{
+    margin: 23px 8px 13px 7px;
+}
+
+.signupbtn{
+    border-radius: 0px;
+    border: 1.4px solid black;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 20px 8px 20px;
+}
+
+.login :hover{
+    background-color: rgba(150, 148, 148, 0.26);
+}
+
+.bgmain img{
+    height: 360px;
+    margin-top: 77px;
+    width: 100%;
+}
+
+.box{
+    /* border: 2px solid black; */
+    box-shadow: inset 0 0em 0em rgb(0 0 0 / 10%), 0 0 0 3px rgb(255 255 255), 0.1em 0.2em 1em rgb(0 0 0 / 30%);
+    position: absolute;
+    top: 161px;
+    width: 366px;
+    padding: 9px;
+    left: 95px;
+    background-color: white;
+}
+
+.box h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 0px 11px 0px 10px;
+}
+
+.box p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 13px 11px 13px 10px;
+}
+
+.section{
+    padding: 15px;
+    margin: 20px 16px 3px 15px;
+}
+
+.section h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 29px;
+    
+}
+
+.section p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.category{
+    padding: 6px;
+}
+
+.category #explore_cat{
+    color: black;
+    text-decoration: none;
+    font-size: 14.4px;
+    font-weight: 700;
+    padding: 0px 25px 0px 0px;
+    background-color: transparent;
+    border: none;
+}
+
+#categoryBox{
+    border: 1px solid rgb(209, 207, 207);
+    padding: 28px;
+    margin-top: 10px;
+}
+
+#categoryBox h5{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+#categoryBox p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#exploreCategory{
+    border-radius: 0px;
+    border: 1.4px solid black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 7px 12px 7px 12px;
+}
+
+.courseimg img{
+    border: 1px solid rgb(209, 207, 207);
+    margin: 32px 0px 2px 0px;
+}
+
+.coursedetail{
+    width: 210px;
+    margin-top: 4px;
+}
+
+.coursedetail .heading{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.coursedetail .instructor{
+    color: gray;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.coursedetail .prize{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.categories_list{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 18.2%;
+    top: 82px;
+    left: 191px;
+    height: 350px;
+    padding: 11px 1px 2px 6px;
+    box-shadow: inset 0 0em 0em rgb(0 0 0 / 10%), 0 0 0 3px rgb(255 255 255), 0.1em 0.2em 1em rgb(0 0 0 / 30%);
+}
+
+.activeOpt{
+    display: block;
+}
+
+.deactiveOpt{
+    display: none;
+}
+
+.categories_list a{
+    margin: 10px 12px 21px 13px;
+    color: black;
+    font-size: 14px;
+    display: block;
+}
+
+.categories_list a:hover{
+    color: #a435f0;
+    text-decoration: none;
+}
+
+.catimg{
+    margin: 29px 10px 13px 37px;
+}
+
+.catimg img{
+    background-color: gray;
+    width: 264px;
+    margin: 15px 57px 0px 0px;
+}
+
+.catimg h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.label a{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 7px 61px 10px 0px;
+    width: 20%;
+    display: inline-block;
+}
+
+.instructor2{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.instructor2 img{
+    margin: 0px 22px 12px 13px;
+}
+
+.instructor2 .info h2{
+    margin: 128px 0px 12px 13px;
+    font-size: 31px;
+    font-family: serif;
+    font-weight: bolder;
+}
+
+.instructor2 .info p{
+    margin: 0px 0px 12px 13px;
+}
+
+.instructorbtn{
+    border-radius: 0px;
+    border: 1.4px solid black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 7px 12px 7px 12px;
+    margin: 0px 0px 12px 13px;
+}
+
+.instructorbtn :hover{
+    background-color: black;
+}
+
+footer{
+    background-color: #1c1d1f;
+    color: white;
+    width: 100%;
+    height: 270px;
+    padding: 30px 0px 0px 20px;
+    margin: 80px 0px 0px 0px;
+}
+
+footer .row{
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    font-size: 13px;
+    padding: 4px 3px 5px 3px;
+}
+
+footer .lang{
+    border: 1px solid white;
+    font-size: 14.5px;
+    position: absolute;
+    right: 42px;
+    padding: 6px 29px 6px 39px;
+    font-weight: 400;
+}
+
+footer .company{
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+footer .company .name{
+    font-size: 23px;
+    color: rgb(190, 190, 190);
+    font-weight: 700;
+}
+
+footer .company .copyright{
+    margin-left: 176px;
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+#name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.globe{
+    position: absolute;
+    top: 7px;
+    right: 79px;
+    font-size: 20px;
+}
+
+.visible{
+    background-color: white;
+    width: 20%;
+    height: 52%;
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    z-index: 12;
+    display: block;
+}
+
+.visible a{
+    display: block;
+    color: black;
+    font-size: 13px;
+    margin: 8px 2px 2px 5px;
+    padding: 9px 7px 1px 10px;
+    text-decoration: none;
+}
+
+.visible a:hover{
+    color: rgb(88, 60, 241);
+}
+
+.categories:hover + .visible{
+    display: block;
+}
+
+#explore_page{
+    display: flex;
+}
+
+#bgmain{
+    width: 100%;
+    height: 100%;
+    margin-top: 74px;
+}
+
+#cont{
+    width: 100%;
+    height: 620px;
+    background: #dfe7e942;;
+    display: flex;
+}
+
+#cont div{
+    display: flex;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 12rem;
+    left: 5rem;
+    flex-direction: column;
+    width: 20%;
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+
+}
+
+#cont div h1{
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 1.15;
+    letter-spacing: -.05rem;
+}
+
+#cont div span{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.3rem;
+}
+
+#cont div button{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    background-color: #1c1d1f;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 5px 9px 5px;
+    border: none;
+    margin-top: 19px;
+}
+
+#cont div img{
+    width: 40rem;
+    position: absolute;
+    top: -4rem;
+    left: 22rem;
+}

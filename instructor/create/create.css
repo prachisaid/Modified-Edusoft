@@ -1,0 +1,531 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    display: flex;
+    height: 75px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+#navbar h1{
+    margin: 7px 30px 10px 15px;
+    padding: 18px 31px 22px 0px;
+    border-right: 1px solid rgb(202, 201, 201);
+}
+
+#navbar a{
+    margin-left: 64rem;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #5624d0;
+}
+
+#navbar p{
+    font-size: 19px;
+}
+
+.form{
+    /* border: 2px solid black; */
+    width: 70%;
+    margin: 70px auto;
+    text-align: center;
+    height: 300px;
+    color: #11101d;
+}
+
+.form h1{
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 1.25;
+    letter-spacing: -.05rem; 
+    margin: 30px 0px;
+}
+
+.form p{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 16px;
+    margin: 32px 0px;
+}
+
+.form input{
+    width: 37rem;
+    padding: 15px;
+    margin: 35px 0px;
+    border: 1px solid #11101d;
+}
+
+::placeholder{
+    font-size: 15.5px;
+    justify-content: center;
+    /* opacity: 1; */
+}
+
+#category{
+    width: 37rem;
+    padding: 15px;
+    margin: 35px 0px;
+    border: 1px solid #11101d;
+    -webkit-appearance: none;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+#category option{
+    font-size: 15.5px;
+}
+
+.form i{
+    position: absolute;
+    top: 322px;
+    right: 24.6rem;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.buttons{
+    /* border: 1px solid black; */
+    margin-top: 10.9rem;
+    height: 70px;    
+    box-shadow: 0 -2px 4px rgb(0 0 0 / 8%), 0 -4px 12px rgb(0 0 0 / 8%);
+}
+
+.buttons #previous{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    border: 1px solid #11101d;
+    font-size: 16px;
+    padding: 11px 16px 11px 16px;
+    color: #11101d;
+    background-color: white;
+    font-weight: 700;
+    margin: 12px 0px 0px 25px;
+    float: left;
+    text-decoration: none;
+}
+
+.buttons #continue{
+    border: 1px solid #11101d;
+    font-size: 16px;
+    padding: 11px 16px 11px 16px;
+    margin: 12px 36px 0px 0px;
+    float: right;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    background-color: #11101d;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.goals_navbar{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #1c1d1f;
+    height: 60px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 24%);
+}
+
+.goals_navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 17px 20px 12px 40px;
+    font-size: 17px;
+}
+
+.goals_navbar span{
+    padding: 17px 12px 11px 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.goals_navbar div .save{
+    margin-left: 62.7rem;
+    margin-top: 13px;
+    padding: 8px 24px 7px 24px;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.main_page{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    box-shadow: 0 2px 8px 2px rgb(28 29 31 / 15%);
+    width: 65rem;
+    float: right;
+    margin: 40px 40px 0px 0px;
+    min-height: 37rem;
+    max-height: 400rem;
+}
+
+.main_page h1{
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    padding: 30px 12px 20px 35px;
+    width: 95.6%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.90;
+    letter-spacing: -.2px;
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.main_page .main_course p {
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    padding: 9px 17px 9px 32px;
+    font-size: 14.5px;
+    letter-spacing: 0.4px;
+}
+
+#title i{
+    padding-top: 1px;
+}
+
+.form_objective{
+    margin: 15px 12px 40px 35px;
+    letter-spacing: 0.4px;
+}
+
+.form_objective form div h3{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 14.5px;   
+    font-weight: 700;
+}
+
+.form_objective form div div{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 14.5px;      
+    margin: 7px 0px;
+}
+
+.form_objective form div input{
+    display: block;
+    width: 60rem;
+    padding: 14px;
+    margin: 25px 0px;
+    border: 1px solid #11101d;
+}
+
+.obj::placeholder{
+    font-size: 15px;
+    justify-content: center;
+}
+
+#more{
+    border: none;
+    background-color: transparent;
+    color: #5624d0;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#more #btn{
+    position: relative;
+    font-weight: 500;
+    font-size: 19px;
+    top: 4px;
+}
+
+#container{
+    display: flex;
+}
+
+#sidecontentbar{
+    font-size: 16px;
+    /* border: 2px solid black; */
+    width: 219px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 76px 14px 11px 41px;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+#sidecontentbar .heading{
+    font-size: 16px ;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+
+#sidecontentbar ul li{
+    list-style: none;
+    padding: 4px 7px 4px 7px;
+    margin: 18px 9px 12px -35px;
+    color: #3e4143;
+}
+
+#sidecontentbar ul li:hover{
+    cursor:default;
+    background-color: #797b7c5b;
+}
+
+.form_objective form div .info{
+    display: block;
+    width: 60rem;
+    padding: 14px;
+    margin: 7px 0px 25px 0px;
+    border: 1px solid #11101d;
+}
+
+.form_objective form div label{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 14.5px;   
+}
+
+#submit_form {
+    background: blueviolet;
+    border: 1px solid blueviolet;
+    color: white;
+    font-weight: 500;
+    padding: 6px 16px 4px 16px;
+    margin-left: 34px;
+    margin-bottom: 33px;
+}
+
+.form_objective form div #course_description{
+    padding: 30px 14px;
+}
+
+#recheck_cat{
+    width: 22rem;
+    padding: 15px;
+    margin: 12px 0px;
+    border: 1px solid #11101d;
+    -webkit-appearance: none;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+#sub_cat{
+        width: 22rem;
+        padding: 15px;
+        margin: 12px 0px;
+        border: 1px solid #11101d;
+        -webkit-appearance: none;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+}
+
+#arrow{
+    position: absolute;
+    top: 43rem;
+    left: 39rem;
+    font-size: 19px;
+    font-weight: 300;
+}
+/* 
+.images_for_page{
+
+} */
+
+.images_for_page #course_image{
+    display: flex;
+}
+
+#course_image img{
+    width: 30rem;
+    height: 18rem;
+}
+
+#course_image #content{
+    /* border: 2px solid black; */
+    width: 26rem;
+    
+}
+
+#content p{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 16px;     
+}
+
+#content input{
+    width: 24rem;
+    border: none;
+    margin-left: 23px;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    height: 35px;
+}
+
+input[type=file]::-webkit-file-upload-button:hover{
+    background-color: #65676846;
+}
+
+#alert{
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 0px;
+    display: flex;
+    margin: 30px 18px 12px 49px;
+    width: 91%;
+    height: 78px;
+}
+
+#title_1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11rem;
+    padding: 17px 22px 12px 7px;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 11rem; */
+    padding: 17px 22px 12px 7px;
+}
+
+#alert #alert_icon{
+    /* position: relative; */
+    padding: 1px 0px;
+    font-size: 22px;
+}
+
+#alert #alert_desc p{
+    padding: 0px 25px;
+}
+
+#alert_close{
+    font-size: 10px;
+}
+
+#lecture_box #lecture{
+        border: 1px solid #6a6f73;
+        display: flex;
+        margin: 45px 0px 11px 46px;
+        width: 92%;
+        background-color: rgba(192, 189, 189, 0.075); 
+}
+
+#lecture_button{
+    padding-left: 43rem;
+    padding-bottom: 9px;
+}
+
+#lecture_box #lecture p{
+    margin: 0px;
+    padding: 20px 0px 10px 13px;
+    font-weight: bold;
+}
+
+#lecture_form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 3px;
+}
+
+
+#lecture_form input{
+    border: 1px solid #6a6f73;
+    height: 37px;
+    margin: 12px 0px 16px 12px;
+}
+
+#lecture_form input[type=submit]{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 13px 6px 9px;
+    font-size: 15px;
+    margin-right: 31px;
+    width: 17%;
+}
+
+#lecture_form ::placeholder{
+    font-size: 14px;
+    padding-left: 12px;
+    justify-content: center;
+    /* opacity: 1; */
+}
+
+#lec div .head{
+    padding: 15px 24px 11px 19px;
+    font-weight: bold;
+}
+
+#lec{
+    border: 1px solid #6a6f73;
+    display: flex;
+    margin: 50px 0px 11px 45px;
+    width: 60rem;
+    min-height: 2vh;
+    max-height: 100vh;
+    background-color: rgba(192, 189, 189, 0.075);
+}
+
+#content_btn{
+    padding-left: 36rem;
+    padding-top: 10px;
+}
+
+.add_content{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 13px 6px 9px;
+    font-size: 15px;
+}
+
+#video_form{
+    border-top: 1px solid black;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    display: block;
+    width: 53rem;
+    margin: auto;
+    margin-top: 69px;
+    margin-left: -51.8rem;
+}
+
+.price_block{
+    /* border: 2px solid black; */
+    margin: 17px 12px 12px 37px;
+    padding: 12px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.price_block button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 4px 12px 4px 11px;
+    font-weight: 600;
+    position: absolute;
+    left: 26.4rem;
+}
+
+.price_main{
+    color: #5624d0;
+}
+
+.price_block select{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 4px 12px 4px 11px;
+    font-weight: 600;
+}
+
+#submit_course{
+    border: 2px solid #a435f0;
+    background-color: #a435f0;
+    color: white;
+    font-weight: 600;
+    padding: 9px 9px 8px 9px;
+    margin-left: -234px;
+    margin-top: -103px;
+}
