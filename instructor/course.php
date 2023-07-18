@@ -51,7 +51,7 @@ if (isset($_SESSION['loggedin'])) {
         <ul class="nav_list" style="list-style: none;">
 
             <li>
-                <a href="/project/instructor/course.html">
+                <a href="/project/instructor/course.php">
                     <i class='bx bxs-videos'></i>
                     <span class="links_name">Courses</span>
                 </a>
@@ -59,7 +59,7 @@ if (isset($_SESSION['loggedin'])) {
             </li>
 
             <li>
-                <a href="#">
+                <a href="/project/instructor/communication.php">
                     <i class='bx bx-chat'></i>
                     <span class="links_name">Communication</span>
                 </a>
@@ -67,7 +67,7 @@ if (isset($_SESSION['loggedin'])) {
             </li>
 
             <li>
-                <a href="#">
+                <a href="/project/instructor/performance.php">
                     <i class='bx bxs-bar-chart-alt-2'></i>
                     <span class="links_name">Performance</span>
                 </a>

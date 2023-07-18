@@ -12,4 +12,5 @@
               <video src="/project/instructor/create/upload/'.$row['lecture_content'].'" controls></video>
               </div>';
     }
+    
 ?>

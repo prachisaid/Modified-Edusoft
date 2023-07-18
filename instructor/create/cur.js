@@ -16,9 +16,7 @@ function addLec(){
         
         <div id="title">
         <i class='bx bx-file'></i>
-        <p id="lec_title">${lec_title}..</p>
-        <i class='bx bx-pencil'></i>
-        <i class='bx bx-trash'></i>
+        <p id="lec_title">..</p>
         </div>
 
         <div id="content_btn">

@@ -1,7 +1,9 @@
 <?php
     include 'partials/dbconnect.php';
     session_start();
+    if(isset($_SESSION['loggedin'])){
     $user_id = $_SESSION['user_id'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -77,20 +79,25 @@
             $q = "SELECT * FROM landing_page WHERE course_category_id = $catid";
             $res = mysqli_query($conn, $q);
 
+            $count = 0;
             while($r = mysqli_fetch_assoc($res)){
+            if($count < 5){
+
+                echo '<a href="course_page.php?course_id='.$r['course_id'].'" id="actual_content" style="display:block; margin-right:30px; width:18%">
+                <div class="courseimg">
+                    <img src="instructor/create/image/'.$r['course_image'].'" width="235px" alt="" />
+                </div>
+                <div class="coursedetail">
+                    <p class="heading">
+                        '.$r['course_title'].'
+                    </p>
+                    <p class="instructor">Jose Portilla</p>
+                    <p class="prize">'.$r['course_price'].'</p>
+                </div>
+                </a>';
+                $count++;
+            }
            
-            echo '<a href="course_page.php?course_id='.$r['course_id'].'" id="actual_content" style="display:block; margin-right:30px; width:18%">
-            <div class="courseimg">
-                <img src="instructor/create/image/'.$r['course_image'].'" width="235px" alt="" />
-            </div>
-            <div class="coursedetail">
-                <p class="heading">
-                    '.$r['course_title'].'
-                </p>
-                <p class="instructor">Jose Portilla</p>
-                <p class="prize">'.$r['course_price'].'</p>
-            </div>
-            </a>';
             }
 
             echo '</div>'

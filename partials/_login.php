@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['username'] = $row['user_name'];
                     $_SESSION['user_id'] = $row['user_id'];
                     $user_id = $_SESSION['user_id'];
-                    echo "<script>localStorage.setItem('user_id', " . $user_id . ")</script>";
+                    echo "<script>localStorage.setItem('user_id',".$user_id.")</script>";
                     header("location: /project/home.php");
                 }
                 else{
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
           }
           else{
-            $showErr = "Invalid Credentials. uigu";
+            $showErr = "Invalid Credentials.";
         }
     }
 ?>
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div id="navbar">
-        <nav>
+        <nav style="position: initial;">
             <div class="logo">
                 <img src="img/edusoftlogo.jpg" width="40px" style="padding-bottom: 4px" alt="" />
                 <a href="/project/index.php" style="text-decoration: none;">edusoft</a>
@@ -87,6 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </nav>
     </div>
 
+    <div>
     <?php
     if ($login) {
         echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -101,6 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>';
     }
     ?>
+    </div>
     <div class="loginform">
         <h3>Log In to your edusoft account</h3>
         <form action="/project/partials/_login.php" method="POST">

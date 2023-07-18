@@ -1,7 +1,9 @@
 <?php
     include 'partials/dbconnect.php';
     session_start();
-    $user_id = $_SESSION['user_id'];
+    if(isset($_SESSION['logged_in'])){
+        $user_id = $_SESSION['user_id'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -120,6 +122,8 @@
     <div class="accordion" id="lectures">
         <h1>Course content</h1>
 
+        <h4 style="font-size:20px; font-weight:bold; margin: 26px 0px 20px 0px; font-style:oblique">Lectures</h4>
+
         <?php
         $sql2 = "SELECT * FROM `lectures` WHERE `course_id` = '$course_id'";
         $result2 = mysqli_query($conn, $sql2);
@@ -144,6 +148,38 @@
                 padding: 1px 1px 1px 1px;
                 position: relative;
                 top: 2px;"></i> ' . $lecture_title . '
+                </div>
+            </div>
+        </div>';
+        }
+        ?>
+
+<h4 style="font-size:20px; font-weight:bold; margin: 26px 0px 20px 0px; font-style:oblique">Note's</h4>
+
+<?php
+        $sql3 = "SELECT * FROM `notes` WHERE `course_id` = '$course_id'";
+        $result3 = mysqli_query($conn, $sql3);
+        while ($row3 = mysqli_fetch_assoc($result3)) {
+            $notes_id = $row3['notes_id'];
+            $notes_title = $row3['notes_title'];
+
+            echo '<div class="card">
+            <div class="card-header" id="heading' . $notes_id . '">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#lecture' . $notes_id . '" aria-expanded="true" aria-controls="lecture' . $notes_id . '" style="font-weight: 700;
+                    color: black;">
+                       Material ' . $notes_id . '
+                    </button>
+                </h2>
+            </div>
+
+            <div id="lecture' . $notes_id . '" class="collapse" aria-labelledby="heading' . $notes_id . '" data-parent="#lectures">
+                <div class="card-body" style="padding-left: 37px;
+                font-size: 14px;">
+                <i class="bx bx-play-circle" style="font-weight: bolder;
+                padding: 1px 1px 1px 1px;
+                position: relative;
+                top: 2px;"></i> ' . $notes_title . '
                 </div>
             </div>
         </div>';

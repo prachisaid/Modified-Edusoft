@@ -41,7 +41,7 @@ include 'partials/dbconnect.php';
 
     </div>
 
-    <footer style="margin-top: 171px;">
+    <footer style="margin-top: 194px;">
         <div class="lang"><i class='bx bx-globe globe'></i>English</div>
         <div class="row">
             <div class="col-md-2 ">

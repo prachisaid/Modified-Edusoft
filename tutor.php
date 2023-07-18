@@ -6,7 +6,6 @@ session_start();
     $_SESSION['tutor_t'] = true;
     $sql = "UPDATE `users` SET `tutor_bit` = 'true' WHERE `user_id` = '$user_id'";
     $result = mysqli_query($conn, $sql);
-    header("location: /project/instructor/course.php");
   }
 ?>
 
@@ -113,7 +112,7 @@ session_start();
             data: { set : true },
 
             success: function (data) {
-
+              window.location = "http://localhost/project/instructor/course.php";
             },
           });
         });

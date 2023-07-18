@@ -2,6 +2,7 @@
     include 'partials/dbconnect.php';
     session_start();
     $user_id = $_SESSION['user_id'];
+    echo "<script>localStorage.setItem('user_id',".$user_id.")</script>";
     
 ?>
 <!DOCTYPE html>
@@ -64,6 +65,7 @@
         <?php
             $sql = "SELECT * FROM `categories` LIMIT 5";
             $result = mysqli_query($conn, $sql);
+           
 
             while($row = mysqli_fetch_assoc($result)){
                 $cat_id = $row['category_id'];
@@ -75,8 +77,9 @@
                 <div id="actual_content">';
                 $q = "SELECT * FROM landing_page WHERE course_category_id = $cat_id";
                 $res = mysqli_query($conn, $q);
-
+                $count=0;
                 while($r = mysqli_fetch_assoc($res)){
+                    if($count < 5){
 
                     $course_id = $r['course_id'];
                     $course_image = $r['course_image'];
@@ -100,10 +103,17 @@
                     $'.$course_price.'
                 </div>
             </a>';
+            $count++;
+            // echo $count;
+        }else{
+
+        }
+
                 }
                 echo '</div>
                 </div>';
             }
+            
         ?>
     </div>
         

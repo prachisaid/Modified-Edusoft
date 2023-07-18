@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($conn, $existssql);
     $numexistsrow = mysqli_num_rows($result);
 
-    if ($numexistsrow <= 1) {
+    if ($numexistsrow >= 1) {
         $showError = "Email aleready exists";
     } else {
         $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -21,37 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = mysqli_query($conn, $sql);
         if ($result) {
             $showAlert = true;
-
-        //     require 'PHPMailerAutoload.php';
-        //     $mail = new PHPMailer;
-
-        //     $mail->SMTPDebug = 4;                               // Enable verbose debug output
-
-        //     $mail->isSMTP();                                      // Set mailer to use SMTP             
-        //     $mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
-        //     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        //     $mail->Username = 'learnwithedusoft@gmail.com';                 // SMTP username
-        //     $mail->Password = 'Edusoft12';                           // SMTP password
-        //     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-        //     $mail->Port = 465;                                    // TCP port to connect to
-
-        //     $mail->setFrom('learnwithedusoft@gmail.com', 'Edusoft');
-        //     $mail->addAddress($email);     // Add a recipient     
-
-        //     // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        //     // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        //     $mail->isHTML(true);                                  // Set email format to HTML
-
-        //     $mail->Subject = 'Your account on edusoft has been created successfully!!';
-        //     $mail->Body    = 'Welcome! to edusoft learn anything and everything you want here by most skilled           teachers and at very reasonable prices..! <b> Enjoy learning</b>';
-        //     $mail->AltBody = 'Welcome! to edusoft learn anything and everything you want here by most skilled           teachers and at very reasonable prices..! Enjoy learning';
-
-        //     if (!$mail->send()) {
-        //         echo 'Message could not be sent.';
-        //         echo 'Mailer Error: ' . $mail->ErrorInfo;
-        //     } else {
-        //         echo 'Message has been sent';
-        //     }
+            echo `
+            <script>
+                Email.send({
+                    Host: "smtp.gmail.com", 
+                    Username: "learnwithedusoft@gmail.com",
+                    Password: "Edusoft12",
+                    To: "prachisaid16@gmail.com",
+                    From: "learnwithedusoft@gmail.com",
+                    Subject: "Thanks for logging in",
+                }).then(
+                    console.log(message)
+                )
+            </script>`;
         }
     }
 }
@@ -197,6 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

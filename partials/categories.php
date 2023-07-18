@@ -1,5 +1,5 @@
     
-    <div class="categories_list">
+    <div class="categories_list" style="z-index: 1;">
 <?php
     $sql = "SELECT * FROM categories";
     $result = mysqli_query($conn, $sql);

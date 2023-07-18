@@ -4,7 +4,9 @@ include 'partials/dbconnect.php';
 session_start();
 
 $c_id = $_GET['c_id'];
-
+$user_id = $_SESSION['user_id'];
+$username = explode(" ", $_SESSION['username']);
+$user = $username[0];
 ?>
 
 <!DOCTYPE html>
@@ -41,11 +43,11 @@ $c_id = $_GET['c_id'];
                 ?>
             </div>
             <div class="username" style="margin: 23px 14px 13px 1rem;">
-                <h5>Prachi</h5>
+                <h5><?php echo $user ?></h5>
             </div>
 
-            <div style="margin-top: 20px; margin-left: 12px;">
-                <a href="home.php" class="logout" style="color: white;">Back</a>
+            <div style="margin-top: 23px; margin-left: 12px;">
+                <a href="home.php" class="logout" style="color: white; border:none">Back</a>
             </div>
         </nav>
     </div>
@@ -57,6 +59,7 @@ $c_id = $_GET['c_id'];
             <h1 style="font-size: 20px;
     font-weight: 700;
     margin: 22px 11px 17px 9px;">Course content</h1>
+    <h4 style="font-size:20px; font-weight:bold; margin: 26px 0px 20px 11px; font-style:oblique">Lectures</h4>
         <?php
         
         $sql = "SELECT * FROM `lectures` WHERE course_id = $c_id";
@@ -88,6 +91,37 @@ $c_id = $_GET['c_id'];
         }
 
     ?>
+    <h4 style="font-size:20px; font-weight:bold; margin: 26px 0px 20px 0px; font-style:oblique">Note's</h4>
+
+<?php
+        $sql3 = "SELECT * FROM `notes` WHERE `course_id` = '$c_id'";
+        $result3 = mysqli_query($conn, $sql3);
+        while ($row3 = mysqli_fetch_assoc($result3)) {
+            $notes_id = $row3['notes_id'];
+            $notes_title = $row3['notes_title'];
+
+            echo '<div class="card">
+            <div class="card-header" id="notes_heading' . $notes_id . '">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#notes' . $notes_id . '" aria-expanded="true" aria-controls="notes' . $notes_id . '" style="font-weight: 700;
+                    color: black;">
+                       Material ' . $notes_id . '
+                    </button>
+                </h2>
+            </div>
+
+            <div id="notes' . $notes_id . '" class="collapse" aria-labelledby="notes_heading' . $notes_id . '" data-parent="#lectures">
+                <div class="card-body" style="padding-left: 37px; 
+                font-size: 14px;" id="'.$notes_id.'" onclick="new2(this.id)">
+                <i class="bx bx-play-circle" style="font-weight: bolder;
+                padding: 1px 1px 1px 1px;
+                position: relative;
+                top: 2px;"></i> ' . $notes_title . '
+                </div>
+            </div>
+        </div>';
+        }
+        ?>
             </div>
             </div>
         <div id="section2"> 
@@ -101,7 +135,7 @@ $c_id = $_GET['c_id'];
 
     </div>
     
-    <footer style="margin-top: -99px;"> 
+    <footer style="margin-top: 300px;"> 
         <div class="lang"><i class='bx bx-globe globe'></i>English</div>
         <div class="row">
             <div class="col-md-2 ">
@@ -155,12 +189,12 @@ $c_id = $_GET['c_id'];
     </script>
 
     <script>
+        var url_value = window.location.href;
+        var url = new URL(url_value)
+        var c_id = url.searchParams.get("c_id");
+
         function new1(id){
             console.log(id)
-
-            var url_value = window.location.href;
-            var url = new URL(url_value)
-            var c_id = url.searchParams.get("c_id");
             // console.log(data);
 
             $.ajax({
@@ -173,6 +207,21 @@ $c_id = $_GET['c_id'];
                 success : function(e){
                     $('#section2').html(e)
                 }
+            })
+        }
+
+        function new2(id){
+            $.ajax({
+                url : 'play_notes_ajax.php',
+                type : 'post',
+                data : {
+                    lec_id : id,
+                    course_id : c_id
+                },
+                success : function(e){
+                    $('#section2').html(e)
+                }
+                
             })
         }
     </script>

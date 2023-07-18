@@ -44,11 +44,11 @@
             <a href="mylearning.php">My learning</a>
         </div>
 
-        <div class="wishlist">
+        <div class="wishlist" style="margin-top:26px">
             <a href="wishlist.php"><i class="bx bx-heart"></i></a>
         </div>
 
-        <div class="cart">
+        <div class="cart" style="margin-top:26px">
            <a href="/project/cart.php"><i class="bx bx-cart-alt cartIcon"></i><span id="quantity">0</span></a> 
         </div>
 
@@ -70,12 +70,12 @@
 
 if(!isset($_SESSION['loggedin'])){
     echo '
-    <div class="cart">
+    <div class="cart" style="margin-right: 19px">
         <a href="/project/cart.php"><i class="bx bx-cart-alt cartIcon"></i></a> 
     </div>
 
     <div class="login">
-        <a href="/project/partials/_login.php" class="loginbtn">Log in</a>
+        <a href="/project/partials/_login.php" class="loginbtn" style="margin-right: 10px">Log in</a>
     </div>
 
     <div class="signup">

@@ -62,7 +62,7 @@
                         emphasizes readability and usability. Python was..
                     </p>
                     <button id="exploreCategory">Explore Python</button>
-                    <div id="explore_page">
+                    <div id="explore_page" style="flex-direction:column">
                 
                 <?php 
                 $sql1 = "SELECT * FROM `landing_page` WHERE `course_subcat_id` = '$subcat_id'";
@@ -91,25 +91,25 @@
 
     <div class="catimg">
         <h2>Top Categories</h2>
-        <a href="#"><img src="img/design.jpg" alt="" /></a>
-        <a href="#"><img src="img/development.jpg" alt="" /></a>
-        <a href="#"><img src="img/marketing.jpg" alt="" /></a>
-        <a href="#"><img src="img/it.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=3"><img src="img/design.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=1"><img src="img/development.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=5"><img src="img/marketing.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=2"><img src="img/it.jpg" alt="" /></a>
         <div class="label">
-            <a href="#">Design</a>
-            <a href="#">Development</a>
-            <a href="#">Marketing</a>
-            <a href="#">It and software</a>
+            <a href="/project/development.php?cat_id=3">Design</a>
+            <a href="/project/development.php?cat_id=1">Development</a>
+            <a href="/project/development.php?cat_id=5">Marketing</a>
+            <a href="/project/development.php?cat_id=2">It and software</a>
         </div>
-        <a href="#"><img src="img/business.jpg" alt="" /></a>
-        <a href="#"><img src="img/teaching.jpg" alt="" /></a>
-        <a href="#"><img src="img/music.jpg" alt="" /></a>
-        <a href="#"><img src="img/photography.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=4"><img src="img/business.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=8"><img src="img/teaching.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=7"><img src="img/music.jpg" alt="" /></a>
+        <a href="/project/development.php?cat_id=6"><img src="img/photography.jpg" alt="" /></a>
         <div class="label">
-            <a href="#">Business</a>
-            <a href="#">Teaching</a>
-            <a href="#">Music</a>
-            <a href="#">Photography</a>
+            <a href="/project/development.php?cat_id=4">Business</a>
+            <a href="/project/development.php?cat_id=8">Teaching</a>
+            <a href="/project/development.php?cat_id=7">Music</a>
+            <a href="/project/development.php?cat_id=6">Photography</a>
         </div>
     </div>
 
